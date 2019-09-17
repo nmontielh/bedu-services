@@ -39,5 +39,7 @@ hs_err_pid*
 # Maven
 log/
 target/
-
+.mvn/
+.mvn/**
+.mvn
 
