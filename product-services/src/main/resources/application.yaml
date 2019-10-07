@@ -1,0 +1,18 @@
+server:
+  port: 9001
+# Defining data instead of using a database
+products:
+  product:
+    - name: Java
+      serial: JAVA1234
+      description: OOP Language
+      price: 1000
+    - name: IA
+      serial: IA1234
+      description: Artificial Intelligence
+      price: 10000
+    - name: Python
+      serial: PY1234
+      description: Python for statistics
+      price: 500
+      

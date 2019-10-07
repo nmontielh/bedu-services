@@ -1,9 +1,9 @@
 package com.bedu.services.product;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Iniciador de la aplicacion de Spring boot
@@ -11,14 +11,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author montieln
  *
  */
+@Slf4j
 @SpringBootApplication
 public class ProductServicesApplication {
 
-	private static Logger log = LoggerFactory.getLogger(ProductServicesApplication.class);
-
 	public static void main(String[] args) {
 
-		log.info("Loading..");
+		log.info("Loading Product Microservices..");
 
 		SpringApplication.run(ProductServicesApplication.class, args);
 	}

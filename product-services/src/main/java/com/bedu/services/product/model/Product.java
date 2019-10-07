@@ -1,32 +1,35 @@
 package com.bedu.services.product.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
- * Entidad que representa un producto
- * 
+ * @see entity that represents a product to buy
  * @author montieln
  *
  */
 @Getter
 @Setter
 @NoArgsConstructor
-public class MyAwsomeProduct implements Serializable {
+@ToString(includeFieldNames = true)
+@EqualsAndHashCode
+public class Product implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private String name;
 	private String serial;
+	private String description;
 
-	public MyAwsomeProduct(String name, String serial) {
-		super();
+	private BigDecimal price;
+
+	public Product(String name, String serial) {
 		this.name = name;
 		this.serial = serial;
 	}
